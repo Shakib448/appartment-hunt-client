@@ -1,5 +1,5 @@
-$layout-breakpoint-small : 576px
-$layout-breakpoint-mid : 768px
+@import '../../Shared/CommonSytle/_variable'
+@import '../../Shared/CommonSytle/_media'
 
 .banner
     background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('../../../images/Rectangle 13.png')
@@ -21,7 +21,7 @@ $layout-breakpoint-mid : 768px
 
 .banner__searchBtn
     padding : 15px 35px !important
-    background : #275A53 !important
+    background : $background !important
     border: none !important
     &:focus
         outline : none !important
@@ -34,7 +34,7 @@ input#inlineFormInput
         box-shadow: none
         outline : none 
 
-@media  ( max-width: $layout-breakpoint-mid )
+@media  ( max-width: $md )
     input#inlineFormInput
         width : 300px 
     .banner__form
@@ -42,7 +42,7 @@ input#inlineFormInput
         h1
             font-size: 3rem
 
-@media  ( max-width: $layout-breakpoint-small )
+@media  ( max-width: $sm )
     input#inlineFormInput
         width : 250px 
     .banner__form
