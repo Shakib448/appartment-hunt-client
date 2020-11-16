@@ -254,18 +254,11 @@ const Login = () => {
             </div>
           </form>
           <div className="login__or">
-            <div className="row login__or">
-              <div className="col-md-4">
-                <hr className="login__left" />
-              </div>
-              <div className="col-md-4">
-                <h3>or</h3>
-              </div>
-              <div className="col-md-4 login__rightLeft">
-                <hr className="login__right" />
-              </div>
-            </div>
+            <div className="hr"></div>
+            <div className="or">or</div>
+            <div className="hr"></div>
           </div>
+
           <div
             onClick={handleFaceBookSignIn}
             className="login__faceBook__google"
