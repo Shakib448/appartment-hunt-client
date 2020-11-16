@@ -10,8 +10,8 @@ const HouseRent = () => {
   return (
     <section>
       <Container>
-        <Row className="justify-content-center m-4">
-          <div className="houseRend__content">
+        <Row className="justify-content-center ">
+          <div className="houseRend__content mt-5 mb-5">
             <h5>House Rent</h5>
             <h1>Discover the latest Rent</h1>
             <h1>available tody</h1>
