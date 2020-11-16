@@ -116,7 +116,10 @@ const Login = () => {
             <h5> {newUserInfo ? " Create a new account?" : "Log in"} </h5>
             <hr />
             {newUserInfo && (
-              <div className="form-group" style={{ textAlign: "center" }}>
+              <div
+                className="form-group inputForm"
+                style={{ textAlign: "center" }}
+              >
                 <input
                   name="fullName"
                   className="form-control login__input"
@@ -151,7 +154,10 @@ const Login = () => {
                 </span>
               </div>
             )}
-            <div className="form-group" style={{ textAlign: "center" }}>
+            <div
+              className="form-group inputForm"
+              style={{ textAlign: "center" }}
+            >
               <input
                 name="email"
                 placeholder="Email"
@@ -167,7 +173,10 @@ const Login = () => {
                 {errors.email && errors.email.message}
               </span>
             </div>
-            <div className="form-group" style={{ textAlign: "center" }}>
+            <div
+              className="form-group inputForm"
+              style={{ textAlign: "center" }}
+            >
               <input
                 type="password"
                 name="password"
@@ -186,7 +195,10 @@ const Login = () => {
                 {errors.password && errors.password.message}
               </span>
             </div>
-            <div className="form-group" style={{ textAlign: "center" }}>
+            <div
+              className="form-group inputForm"
+              style={{ textAlign: "center" }}
+            >
               <input
                 type="password"
                 name="confirmPassword"
