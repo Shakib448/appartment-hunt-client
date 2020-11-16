@@ -1,18 +1,15 @@
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import "./Login.css";
+import "./Login.sass";
 import firebase from "firebase";
 import { useHistory, useLocation } from "react-router-dom";
-
-import fb from "../../../logos/Group 2.png";
-import google from "../../../logos/Group 573.png";
-// import { UserLoggedIn } from "../../App";
+import fb from "../../../logos/fb.png";
+import google from "../../../logos/google.png";
 import firebaseConfig from "../FirebaseConfig/Firebase.config";
 
 firebase.initializeApp(firebaseConfig);
 
 const Login = () => {
-  //   const [loggedIn, setLoggedIn] = useContext(UserLoggedIn);
   const { register, errors, handleSubmit, watch } = useForm({});
   const password = useRef({});
   password.current = watch("password", "");
@@ -38,14 +35,7 @@ const Login = () => {
       .then((res) => {
         const { email, displayName } = res.user;
 
-        const singedInUser = {
-          isSignIn: true,
-          name: displayName,
-          email: email,
-        };
-
-        // setLoggedIn(singedInUser);
-        history.replace(from);
+        // history.replace(from);
       })
       .catch((error) => {
         console.log(error);
@@ -61,14 +51,7 @@ const Login = () => {
       .then((res) => {
         const { email, displayName } = res.user;
 
-        const singedInUser = {
-          isSignIn: true,
-          name: displayName,
-          email: email,
-        };
-
-        // setLoggedIn(singedInUser);
-        history.replace(from);
+        // history.replace(from);
       })
       .catch((err) => {
         console.log(err);
@@ -112,7 +95,7 @@ const Login = () => {
           newUser.success = true;
           setUser(newUser);
           //   setLoggedIn(newUser);
-          history.replace(from);
+          //   history.replace(from);
         })
         .catch((error) => {
           const newUser = { ...user };
@@ -243,7 +226,7 @@ const Login = () => {
               <span
                 className="mt-4"
                 style={{
-                  color: "#F9A51A",
+                  color: "#16322E",
                   marginTop: "20px",
                   cursor: "pointer",
                 }}

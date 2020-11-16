@@ -6,12 +6,12 @@ import Service from "../Service/Service";
 
 const Home = () => {
   return (
-    <>
+    <main style={{ backgroundColor: "#f1f6f4" }}>
       <Banner />
       <HouseRent />
       <Service />
       <Footer />
-    </>
+    </main>
   );
 };
 
