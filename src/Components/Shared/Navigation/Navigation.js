@@ -72,7 +72,7 @@ const Navigation = () => {
               >
                 Contact
               </NavLink>
-              <NavLink to="/google-sign-in">
+              <NavLink to="/login">
                 <Button className="btn pl-4 pr-4 pt-2 pb-2 navigation__btn">
                   Log In
                 </Button>
