@@ -8,3 +8,7 @@
 section {
   background: #f1f6f4;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
