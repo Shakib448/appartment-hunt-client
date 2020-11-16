@@ -14,7 +14,7 @@ const Footer = () => {
         <Row>
           <Col lg={3} md={6} sm={12} style={{ display: "flex" }}>
             <div className=" d-none d-sm-none d-md-block">
-              <LocationOnIcon style={{ marginRight: "15px", color: "white" }} />
+              <LocationOnIcon style={{ marginRight: "5px", color: "white" }} />
             </div>
             <ul className="footer__details">
               <li>H#340(4th Floor), Road #24</li>
