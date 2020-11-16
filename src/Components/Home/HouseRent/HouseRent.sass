@@ -1,5 +1,6 @@
 @import '../../Shared/CommonSytle/_variable'
 @import '../../Shared/CommonSytle/_media'
+@import '../../Shared/CommonSytle/_mixins'
 
 .houseRend__content
     text-align: center
@@ -12,6 +13,32 @@
         overflow: hidden
         color : $background
 
+.card__title
+    overflow: hidden
+    color : $background
+    font-weight: bold !important
+
+.houseRent__cardBody
+    display: flex
+    justify-content : space-between
+
+.cardIcon
+    color : $iconColor
+    margin-right: 5px
+
+.card__footer
+    display: flex
+    justify-content : space-between
+    align-items: center
+    margin: 20px 0
+
+.card__price
+    font-size : 30px
+    font-weight: bold
+    color : $background
+
+.card__button
+    +button(10px, 15px)
 @media   ( max-width: $md  )
     .houseRend__content
         h1

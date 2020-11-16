@@ -1,5 +1,6 @@
 @import '../../Shared/CommonSytle/_variable'
 @import '../../Shared/CommonSytle/_media'
+@import '../../Shared/CommonSytle/_mixins'
 
 %flexBox
     display: flex
@@ -23,12 +24,7 @@
         overflow: hidden
 
 .banner__searchBtn
-    padding : 15px 35px !important
-    background : $background !important
-    border: none !important
-    &:focus
-        outline : none !important
-        box-shadow: none !important
+    +button(15px, 35px)
 
 input#inlineFormInput
     width: $height - 100px
