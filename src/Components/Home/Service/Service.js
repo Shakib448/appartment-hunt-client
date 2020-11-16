@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./Service.sass";
-import img1 from "../../../logos/affordable 1.png";
-import img2 from "../../../logos/apartment 1.png";
+import img1 from "../../../logos/apartment 1.png";
+import img2 from "../../../logos/affordable 1.png";
 import img3 from "../../../logos/lessee 1.png";
 import ServiceDetails from "../ServiceDetails/ServiceDetails";
 

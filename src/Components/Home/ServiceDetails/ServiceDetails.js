@@ -15,7 +15,7 @@ const ServiceDetails = ({
           src={img}
         />
         <Card.Body className="service__cardBody">
-          <Card.Title>{title}</Card.Title>
+          <Card.Title className="font-weight-bold">{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
       </Card>
