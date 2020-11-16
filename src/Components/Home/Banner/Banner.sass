@@ -1,17 +1,20 @@
 @import '../../Shared/CommonSytle/_variable'
 @import '../../Shared/CommonSytle/_media'
 
+%flexBox
+    display: flex
+    justify-content: center
+    align-items: center
+
 .banner
     background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('../../../images/Rectangle 13.png')
     background-repeat: no-repeat
     background-size: cover
 
 .banner__form
-    display: flex
-    justify-content: center
-    align-items: center
+    @extend %flexBox
     flex-direction: column
-    height: 500px
+    height: $height
     padding : 30px
     h1
         font-size: 3.5rem
@@ -28,7 +31,7 @@
         box-shadow: none !important
 
 input#inlineFormInput
-    width: 500px
+    width: $height - 100px
     padding: 25px
     &:focus
         box-shadow: none
@@ -36,7 +39,7 @@ input#inlineFormInput
 
 @media  ( max-width: $md )
     input#inlineFormInput
-        width : 300px 
+        width : $height - 300px
     .banner__form
         text-align: center
         h1
@@ -44,7 +47,7 @@ input#inlineFormInput
 
 @media  ( max-width: $sm )
     input#inlineFormInput
-        width : 250px 
+        width : $height - 350px 
     .banner__form
         text-align: center
         h1

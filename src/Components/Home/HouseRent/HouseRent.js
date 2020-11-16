@@ -13,6 +13,7 @@ const HouseRent = () => {
             <h1>available tody</h1>
           </div>
         </Row>
+        <Row className="justify-content-center mt-3 mb-3"></Row>
       </Container>
     </section>
   );
