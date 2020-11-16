@@ -27,7 +27,7 @@ const Navigation = () => {
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto font-weight-bold text-white ">
+            <Nav className="ml-auto text-white nav__item">
               <NavLink
                 className="mr-4 mb-3 mt-2 text-dark "
                 activeClassName="mainNav__activeHover"
@@ -73,7 +73,7 @@ const Navigation = () => {
                 Contact
               </NavLink>
               <NavLink to="/google-sign-in">
-                <Button className="btn btn-dark pl-5 pr-5 pt-2 pb-2 mainNav__btn">
+                <Button className="btn pl-4 pr-4 pt-2 pb-2 navigation__btn">
                   Log In
                 </Button>
               </NavLink>
