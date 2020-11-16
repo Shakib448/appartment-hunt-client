@@ -4,3 +4,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+section {
+  background: #f1f6f4;
+}
