@@ -5,3 +5,24 @@
 .service__content
     text-align: center
     +commonContent(2.5rem)
+
+.service__card
+    border: none !important
+    padding: 20px
+    margin : 30px 0
+
+.service__cardImg
+    width: 100px !important
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 50%
+
+.service__cardBody
+    text-align: center
+    color: $background
+
+@media   ( max-width: $md  )
+    .service__content
+        h1
+            font-size: 1.5rem
