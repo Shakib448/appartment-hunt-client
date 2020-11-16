@@ -1,5 +1,50 @@
+$layout-breakpoint-small : 576px
+$layout-breakpoint-mid : 768px
+
 .banner
     background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('../../../images/Rectangle 13.png')
     background-repeat: no-repeat
     background-size: cover
-    height: 600px
+
+.banner__form
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 500px
+    padding : 30px
+    h1
+        font-size: 3.5rem
+        color: #fff
+        margin : 20px 0
+
+.banner__searchBtn
+    padding : 15px 35px !important
+    background : #275A53 !important
+    border: none !important
+    &:focus
+        outline : none !important
+        box-shadow: none !important
+
+input#inlineFormInput
+    width: 500px
+    padding: 25px
+    &:focus
+        box-shadow: none
+        outline : none 
+
+@media  ( max-width: $layout-breakpoint-mid )
+    input#inlineFormInput
+        width : 300px 
+    .banner__form
+        text-align: center
+        h1
+            font-size: 3rem
+
+@media  ( max-width: $layout-breakpoint-small )
+    input#inlineFormInput
+        width : 250px 
+    .banner__form
+        text-align: center
+        h1
+            font-size: 2.5rem
