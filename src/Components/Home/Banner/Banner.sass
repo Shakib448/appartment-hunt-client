@@ -6,6 +6,13 @@
     display: flex
     justify-content: center
     align-items: center
+    flex-direction: column
+    padding : 30px
+    h1
+        font-size: 3.5rem
+        color: #fff
+        margin : 20px 0
+        overflow: hidden
 
 .banner
     background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('../../../images/Rectangle 13.png')
@@ -14,14 +21,11 @@
 
 .banner__form
     @extend %flexBox
-    flex-direction: column
     height: $height
-    padding : 30px
-    h1
-        font-size: 3.5rem
-        color: #fff
-        margin : 20px 0
-        overflow: hidden
+
+.apartment__Banner
+    @extend %flexBox
+    height: $aparmentHeight
 
 .banner__searchBtn
     +button(15px, 35px)
