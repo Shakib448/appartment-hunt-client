@@ -54,6 +54,24 @@ const ApartmentForm = () => {
         </Form.Group>
         <Form.Group>
           <Form.Control
+            name="email"
+            type="text"
+            placeholder="Email"
+            className="reviewForm__focus"
+            ref={register({
+              required: "Email is required",
+              pattern: {
+                value: /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/,
+                message: "Only (@gmail) email required",
+              },
+            })}
+          />
+          <span style={{ color: "red" }}>
+            {errors.email && errors.email.message}
+          </span>
+        </Form.Group>
+        <Form.Group>
+          <Form.Control
             as="textarea"
             rows={6}
             name="message"
