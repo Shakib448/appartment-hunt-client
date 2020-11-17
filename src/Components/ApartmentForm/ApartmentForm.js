@@ -1,13 +1,20 @@
 import React from "react";
 import { Button, Col, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import "./ApartmentForm.sass";
 
 const ApartmentForm = () => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => console.log(data);
 
   return (
-    <Col lg={4} md={6} sm={12}>
+    <Col
+      lg={4}
+      md={6}
+      sm={12}
+      className="p-4"
+      style={{ background: "#F1F6F4" }}
+    >
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group>
           <Form.Control
@@ -95,8 +102,8 @@ const ApartmentForm = () => {
           </span>
         </Form.Group>
         <div className="text-center">
-          <Button variant="primary" type="submit">
-            Submit
+          <Button className="submit__btn" variant="primary" type="submit">
+            Request Booking
           </Button>
         </div>
       </Form>
