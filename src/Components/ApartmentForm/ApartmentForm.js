@@ -13,7 +13,7 @@ const ApartmentForm = () => {
       md={6}
       sm={12}
       className="p-4"
-      style={{ background: "#F1F6F4" }}
+      style={{ background: "#F1F6F4", height: "100%" }}
     >
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group>
